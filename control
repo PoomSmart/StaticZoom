@@ -1,0 +1,10 @@
+Package: com.ps.staticzoom
+Name: StaticZoom
+Depends: mobilesubstrate, firmware (>= 4.0)
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Always show zoom slider in camera app.
+Maintainer: PoomSmart
+Author: PoomSmart
+Section: Tweaks
+Depiction: http://PoomSmart.github.io/repo/staticzoom/index.html
