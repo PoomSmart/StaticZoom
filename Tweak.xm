@@ -11,7 +11,10 @@ static void unhideSlider(id self)
 		object_getInstanceVariable(self, "_zoomSlider", (void **)&slider);
 	if (slider == nil)
 		return;
-	[slider makeVisible];
+	if ([slider respondsToSelector:@selector(makeVisibleAnimated:)])
+		[slider makeVisibleAnimated:YES];
+	else
+		[slider makeVisible];
 }
 
 %group iOS8Up
